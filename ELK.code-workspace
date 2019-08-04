@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "/Users/4431/vagrant/ELK"
+		},
+		{
+			"path": "/Users/4431/vagrant/ELK04"
+		},
+		{
+			"path": "/Users/4431/vagrant/DOCKER_ELK"
+		},
+		{
+			"path": "/Users/4431/vagrant/ELK_PRD"
+		},
+		{
+			"path": "/Users/4431/vagrant/ELK_PRD01"
+		},
+		{
+			"path": "/Users/4431/vagrant/ELK_PRD02"
+		}
+	],
+	"settings": {}
+}
