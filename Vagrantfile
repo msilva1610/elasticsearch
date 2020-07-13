@@ -5,7 +5,7 @@ Vagrant.configure("2") do |config|
 
   # config.vm.box = 'ubuntu/xenial64' #Ubuntu 16.04 LTS
 
-  config.vm.synced_folder ".", "/vagrant", type: "rsync", rsync__exclude: ".vagrant/, .git/"
+  # config.vm.synced_folder ".", "/vagrant", type: "rsync", rsync__exclude: ".vagrant/, .git/"
 
   config.vm.define :elasticsearch10 do |elasticsearch10_config|
     elasticsearch10_config.vm.box = 'centos/7'
@@ -25,7 +25,7 @@ Vagrant.configure("2") do |config|
     kibana_config.vm.hostname = 'kibana'
     kibana_config.vm.network :private_network, ip: '192.168.110.13'
     kibana_config.vm.network :forwarded_port, guest: 5601, host: 5601
-    # kibana_config.vm.provision :shell, path: "kibana.sh" 
+    kibana_config.vm.provision :shell, path: "kibana.sh" 
   end           
   config.vm.define :logstash do |logstash_config|
     logstash_config.vm.box = 'centos/7' 
